@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://data/Elements/Point.tscn" type="PackedScene" id=1]
+[ext_resource path="res://data/Elements/Element.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "fade"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="Element" type="Area2D" groups=[
+"Elements",
+]]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/fade = SubResource( 1 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+
+[node name="Connections" type="Node2D" parent="."]
+
+[node name="Point" parent="Connections" instance=ExtResource( 1 )]
+[connection signal="mouse_entered" from="." to="." method="_on_Element_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_Element_mouse_exited"]

@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://data/Elements/Element.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/sprites/Elements.png" type="Texture" id=2]
+[ext_resource path="res://data/Elements/Point.tscn" type="PackedScene" id=3]
+[ext_resource path="res://data/Elements/Carbon.gd" type="Script" id=4]
+
+[node name="Carbon" instance=ExtResource( 1 )]
+script = ExtResource( 4 )
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 247.584, 3.53449, 69.151, 60.9559 )
+
+[node name="CollisionPolygon2D" parent="." index="3"]
+polygon = PoolVector2Array( -18, -30, -34.75, -0.25, -17.75, 29.5, 17.25, 29.75, 34.25, 0, 16.5, -29.5 )
+
+[node name="Point" parent="Connections" index="0"]
+position = Vector2( 0, 40 )
+
+[node name="Point2" parent="Connections" index="1" instance=ExtResource( 3 )]
+position = Vector2( -48, 0 )
+
+[node name="Point3" parent="Connections" index="2" instance=ExtResource( 3 )]
+position = Vector2( 48, 0 )
+
+[node name="Point4" parent="Connections" index="3" instance=ExtResource( 3 )]
+position = Vector2( 0, -40 )

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/7_clapogg.wav-02ad943a61ef9deb897545f563097d5e.sample"
+
+[deps]
+
+source_file="res://assets/sounds/7_clapogg.wav"
+dest_files=[ "res://.import/7_clapogg.wav-02ad943a61ef9deb897545f563097d5e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

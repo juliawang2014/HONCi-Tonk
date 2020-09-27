@@ -1,0 +1,239 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://assets/fonts/xfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://data/UI/Pause.gd" type="Script" id=2]
+[ext_resource path="res://assets/fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://data/UI/windowbg.tres" type="ButtonGroup" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 32
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 32
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 48
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 48
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 32
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 32
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 32
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[node name="Pause" type="CanvasLayer"]
+pause_mode = 2
+layer = 10
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.258824 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -640.0
+margin_top = -312.78
+margin_right = 640.0
+margin_bottom = -225.78
+custom_fonts/normal_font = ExtResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]PAUSED[/center]"
+text = "PAUSED"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MusicControl" type="HSlider" parent="ColorRect"]
+margin_left = 390.0
+margin_top = 149.58
+margin_right = 769.0
+margin_bottom = 193.58
+rect_scale = Vector2( 2, 2 )
+min_value = -80.0
+max_value = 0.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect/MusicControl"]
+margin_left = -163.07
+margin_top = 2.8633
+margin_right = 129.93
+margin_bottom = 82.8633
+rect_scale = Vector2( 0.5, 0.5 )
+custom_fonts/normal_font = ExtResource( 1 )
+bbcode_enabled = true
+bbcode_text = "Volume"
+text = "Volume"
+
+[node name="RestartLevel" type="ToolButton" parent="ColorRect"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -273.508
+margin_bottom = -220.508
+custom_fonts/font = SubResource( 1 )
+text = "RESTART LEVEL"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LearnButton" type="ToolButton" parent="ColorRect"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -200.0
+margin_bottom = -153.0
+custom_fonts/font = SubResource( 2 )
+text = "LEARN!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Resume" type="ToolButton" parent="ColorRect"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -132.061
+margin_bottom = -83.0609
+custom_fonts/font = SubResource( 3 )
+text = "RESUME"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="ToolButton" parent="ColorRect"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -71.0
+margin_bottom = -24.0
+custom_fonts/font = SubResource( 4 )
+text = "QUIT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fullscreen" type="CheckBox" parent="ColorRect"]
+margin_left = 206.766
+margin_top = 331.126
+margin_right = 230.766
+margin_bottom = 355.126
+custom_fonts/font = SubResource( 5 )
+pressed = true
+group = ExtResource( 4 )
+text = "Fullscreen"
+
+[node name="Windowed" type="CheckBox" parent="ColorRect"]
+margin_left = 707.491
+margin_top = 330.178
+margin_right = 731.491
+margin_bottom = 354.178
+custom_fonts/font = SubResource( 6 )
+group = ExtResource( 4 )
+text = "Windowed"
+
+[node name="NextLevel" type="ToolButton" parent="ColorRect"]
+margin_left = 937.225
+margin_top = 552.357
+margin_right = 1173.23
+margin_bottom = 599.357
+custom_fonts/font = SubResource( 7 )
+text = "NEXT LEVEL"
+
+[node name="Popup" type="Panel" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Popup"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 38.0
+margin_bottom = -504.0
+custom_fonts/normal_font = ExtResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]H O N C
+1 2 3 4[/center]"
+text = "H O N C
+1 2 3 4"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Popup"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 46.0
+margin_top = 237.0
+margin_right = -39.0
+margin_bottom = -166.0
+custom_fonts/normal_font = SubResource( 8 )
+bbcode_enabled = true
+bbcode_text = "[center]The above sequence denotes the number of covalent bonds that each element can form with another element. A covalent bond, otherwise known as a molecular bond, is formed when two atoms share electrons, forming electron pairs.
+
+These four elements are only the most basic types in chemistry, there's a whole periodic table full of elements waiting to be bonded![/center]"
+text = "The above sequence denotes the number of covalent bonds that each element can form with another element. A covalent bond, otherwise known as a molecular bond, is formed when two atoms share electrons, forming electron pairs.
+
+These four elements are only the most basic types in chemistry, there's a whole periodic table full of elements waiting to be bonded!"
+
+[node name="ToolButton" type="ToolButton" parent="Popup"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -109.363
+margin_bottom = -62.3629
+custom_fonts/font = SubResource( 9 )
+text = "Return"
+[connection signal="value_changed" from="ColorRect/MusicControl" to="." method="_on_MusicControl_value_changed"]
+[connection signal="pressed" from="ColorRect/RestartLevel" to="." method="_on_RestartLevel_pressed"]
+[connection signal="pressed" from="ColorRect/LearnButton" to="." method="_on_LearnButton_pressed"]
+[connection signal="pressed" from="ColorRect/Resume" to="." method="_on_Resume_pressed"]
+[connection signal="pressed" from="ColorRect/Quit" to="." method="_on_Quit_pressed"]
+[connection signal="toggled" from="ColorRect/Fullscreen" to="." method="_on_Fullscreen_toggled"]
+[connection signal="toggled" from="ColorRect/Windowed" to="." method="_on_Windowed_toggled"]
+[connection signal="pressed" from="ColorRect/NextLevel" to="." method="_on_NextLevel_pressed"]
+[connection signal="pressed" from="Popup/ToolButton" to="." method="_on_ToolButton_pressed"]

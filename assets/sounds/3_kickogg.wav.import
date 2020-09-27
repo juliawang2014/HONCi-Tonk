@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/3_kickogg.wav-658069d0b35c718caf1b623479da1fde.sample"
+
+[deps]
+
+source_file="res://assets/sounds/3_kickogg.wav"
+dest_files=[ "res://.import/3_kickogg.wav-658069d0b35c718caf1b623479da1fde.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

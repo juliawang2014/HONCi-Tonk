@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/9_tomogg.wav-29e72f5869ff371fc96835076ad0789e.sample"
+
+[deps]
+
+source_file="res://assets/sounds/9_tomogg.wav"
+dest_files=[ "res://.import/9_tomogg.wav-29e72f5869ff371fc96835076ad0789e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

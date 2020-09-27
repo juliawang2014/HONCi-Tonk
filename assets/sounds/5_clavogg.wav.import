@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/5_clavogg.wav-e770be895bfa3ad3f523a013886a3077.sample"
+
+[deps]
+
+source_file="res://assets/sounds/5_clavogg.wav"
+dest_files=[ "res://.import/5_clavogg.wav-e770be895bfa3ad3f523a013886a3077.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

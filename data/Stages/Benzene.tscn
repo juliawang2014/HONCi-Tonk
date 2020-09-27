@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://data/Elements/Hydrogen.tscn" type="PackedScene" id=1]
+[ext_resource path="res://data/Elements/Carbon.tscn" type="PackedScene" id=2]
+[ext_resource path="res://data/Stages/Game.tscn" type="PackedScene" id=3]
+
+[node name="Benzene" instance=ExtResource( 3 )]
+
+[node name="Carbon" parent="Elements" index="0" instance=ExtResource( 2 )]
+position = Vector2( 376.425, 266.968 )
+
+[node name="Carbon2" parent="Elements" index="1" instance=ExtResource( 2 )]
+position = Vector2( 880.994, 154.841 )
+
+[node name="Carbon3" parent="Elements" index="2" instance=ExtResource( 2 )]
+position = Vector2( 995.207, 565.244 )
+
+[node name="Carbon4" parent="Elements" index="3" instance=ExtResource( 2 )]
+position = Vector2( 176.003, 371.033 )
+
+[node name="Carbon5" parent="Elements" index="4" instance=ExtResource( 2 )]
+position = Vector2( 532.765, 102.272 )
+
+[node name="Carbon6" parent="Elements" index="5" instance=ExtResource( 2 )]
+position = Vector2( 623.144, 257.869 )
+
+[node name="Hydrogen" parent="Elements" index="6" instance=ExtResource( 1 )]
+position = Vector2( 832.445, 285.41 )
+
+[node name="Hydrogen2" parent="Elements" index="7" instance=ExtResource( 1 )]
+position = Vector2( 244.977, 133.191 )
+
+[node name="Hydrogen3" parent="Elements" index="8" instance=ExtResource( 1 )]
+position = Vector2( 425.736, 451.899 )
+
+[node name="Hydrogen4" parent="Elements" index="9" instance=ExtResource( 1 )]
+position = Vector2( 608.874, 442.385 )
+
+[node name="Hydrogen5" parent="Elements" index="10" instance=ExtResource( 1 )]
+position = Vector2( 1063.15, 278.274 )
+
+[node name="Hydrogen6" parent="Elements" index="11" instance=ExtResource( 1 )]
+position = Vector2( 254.49, 535.143 )
+
+[node name="CompoundName" parent="Info" index="0"]
+bbcode_enabled = true
+bbcode_text = "[center]Benzene[/center]"
+text = "Benzene"

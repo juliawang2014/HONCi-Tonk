@@ -1,0 +1,64 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://data/UI/Music.gd" type="Script" id=1]
+[ext_resource path="res://assets/sounds/2_shakerogg.wav" type="AudioStream" id=2]
+[ext_resource path="res://assets/sounds/1_bassdrumogg.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/sounds/3_kickogg.wav" type="AudioStream" id=4]
+[ext_resource path="res://assets/sounds/4_hihatclosedogg.wav" type="AudioStream" id=5]
+[ext_resource path="res://assets/sounds/5_clavogg.wav" type="AudioStream" id=6]
+[ext_resource path="res://assets/sounds/9_tomogg.wav" type="AudioStream" id=7]
+[ext_resource path="res://assets/sounds/6_clavogg.wav" type="AudioStream" id=8]
+[ext_resource path="res://assets/sounds/7_clapogg.wav" type="AudioStream" id=9]
+[ext_resource path="res://assets/sounds/8_snareogg.wav" type="AudioStream" id=10]
+[ext_resource path="res://assets/sounds/10_woodogg.wav" type="AudioStream" id=11]
+
+[node name="Music" type="AudioStreamPlayer"]
+stream = ExtResource( 3 )
+autoplay = true
+bus = "Layer0"
+script = ExtResource( 1 )
+
+[node name="Layer1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+autoplay = true
+bus = "Layer1"
+
+[node name="Layer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
+bus = "Layer2"
+
+[node name="Layer3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
+bus = "Layer3"
+
+[node name="Layer4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+autoplay = true
+bus = "Layer4"
+
+[node name="Layer5" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+autoplay = true
+bus = "Layer5"
+
+[node name="Layer6" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+autoplay = true
+bus = "Layer6"
+
+[node name="Layer7" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+autoplay = true
+bus = "Layer7"
+
+[node name="Layer8" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+autoplay = true
+bus = "Layer8"
+
+[node name="Layer9" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+autoplay = true
+bus = "Layer9"
